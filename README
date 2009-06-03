@@ -6,3 +6,16 @@ the default account.  That sets stuff like the mailboxes and spooldir for the
 provider.
 
 private/* contains files that are sourced for mail passwords etc.
+
+NOTE:
+
+I use msmtp for sending mail.  You could also use mutt compliled with smtp
+support.
+
+TODO:
+
+common will be split out into separate files when I have time to refactor.
+
+smime is not finished yet.
+
+GPG is setup using defaults
