@@ -1,10 +1,14 @@
 private/*
 ARCHIVE
 RCS
+certificates
 aliases
 cache
 certificates
 headercache.d
 messagecache.d
 quote-x-face
-smime
+.rsyncexclude
+.*swp
+*~
+quote-x-face
