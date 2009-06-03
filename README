@@ -1,0 +1,8 @@
+muttrc is linked to $HOME/.muttrc
+
+By default when I run mutt it loads muttrc which loads some common settings,
+then local system settings (eg. OS specific), then loads default which setups
+the default account.  That sets stuff like the mailboxes and spooldir for the
+provider.
+
+private/* contains files that are sourced for mail passwords etc.
