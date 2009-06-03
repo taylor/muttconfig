@@ -1,0 +1,5 @@
+set folder="imaps://imap.googlemail.com:993"
+set spoolfile="+INBOX"
+set record=""
+set postponed="+[Gmail]/Drafts"
+save-hook . "+[Gmail]/All Mail"

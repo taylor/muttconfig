@@ -1,0 +1,10 @@
+# $Id: taylor,v 1.2 2007/04/03 04:37:16 taylor Exp taylor $
+source ~/.mutt/common
+source ~/.mutt/local
+
+macro   compose "\e1"   "my_hdr From: Taylor Carpenter <taylor@codecafe.com>"
+set from = "taylor@carpenter.org"
+set realname = "Taylor Carpenter"
+
+source ~/.mutt/private/fm
+source ~/.mutt/fm

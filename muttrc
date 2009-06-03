@@ -1,0 +1,8 @@
+#source /etc/Muttrc
+
+macro   compose "\e1"   "my_hdr From: Taylor Carpenter <taylor@carpenter.org>"
+
+source ~/.mutt/common
+# Check for something first?
+source ~/.mutt/local
+source ~/.mutt/default

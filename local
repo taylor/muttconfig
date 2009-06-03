@@ -1,0 +1,4 @@
+source ~/.mutt/smime
+source ~/.mutt/osx
+#source ~/.mutt/linux
+#source ~/.mutt/x11

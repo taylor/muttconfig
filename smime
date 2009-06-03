@@ -1,0 +1,9 @@
+source /opt/local/share/doc/mutt/samples/smime.rc
+#set smime_ca_location="/usr/local/share/certs/ca-root.crt
+set crypt_autosign = no
+set crypt_replyencrypt = no
+set crypt_replysign = no
+set crypt_replysignencrypted = no
+
+set smime_certificates="~/.smime/certificates"
+set smime_keys="~/.smime/keys"

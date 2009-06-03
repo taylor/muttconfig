@@ -1,0 +1,6 @@
+# http://linsec.ca/Using_mutt_on_OS_X
+source /opt/local/etc/Muttrc
+set sendmail="/opt/local/bin/msmtp"
+set meta_key=yes
+set print_command="enscript --font=Times-Roman10 --pretty-print"
+set query_command="/opt/local/bin/lbdbq '%s'"

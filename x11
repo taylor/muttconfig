@@ -1,0 +1,10 @@
+# $Id: x11,v 1.2 2007/04/03 04:37:16 taylor Exp taylor $
+
+set xterm_set_titles=yes
+# I'm always running mutt in a screen.  This title assumes the preceding
+# statement to be true.  In addition, mutt sets the icon text second, and
+# that takes precedence in screen.
+#set xterm_title='screen  (t) %h %f %?n?%n/?%m msgs'
+#set xterm_icon='screen  (t) %h %f %?n?%n/?%m msgs'
+set xterm_title='%h %f %?n?%n/?%m msgs'
+set xterm_icon='%h %f %?n?%n/?%m msgs'
