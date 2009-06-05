@@ -6,3 +6,6 @@ set postponed="+[Gmail]/Drafts"
 save-hook . "+[Gmail]/All Mail"
 set trash="+[Gmail]/Trash"
 #folder-hook ^imap:// 'unset trash'
+
+macro index S s+[Gmail]/Spam\n
+macro pager S s+[Gmail]/Spam\n
