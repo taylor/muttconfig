@@ -4,3 +4,5 @@ set spoolfile="+INBOX"
 set record=""
 set postponed="+[Gmail]/Drafts"
 save-hook . "+[Gmail]/All Mail"
+set trash="+[Gmail]/Trash"
+#folder-hook ^imap:// 'unset trash'
