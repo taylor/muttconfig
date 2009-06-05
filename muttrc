@@ -1,4 +1,4 @@
 source ~/.mutt/common
-# Check for something first?
 source ~/.mutt/local
+source ~/.mutt/osx
 source ~/.mutt/default
