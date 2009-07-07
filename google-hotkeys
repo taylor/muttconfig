@@ -1,0 +1,21 @@
+# See http://mail.google.com/support/bin/answer.py?hl=en&ctx=mail&answer=6594
+
+macro index c "mail"
+macro pager c "mail"
+macro index e "s+[Gmail]/All Mail<enter>$<enter>" "Archive message"
+macro pager e "s+[Gmail]/All Mail<enter>$<enter>" "Archive message"
+
+macro index ! s+[Gmail]/Spam\n
+macro pager ! s+[Gmail]/Spam\n
+
+bind editor <space> noop
+macro index gl "<change-folder>" "Change folder"
+macro pager gl "<change-folder>" "Change folder"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+#macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+## The next is because doing the above kills g for group reply
+# google uses a but that is alias
+#macro index gg "<group-reply>" "Group reply"
