@@ -1,11 +1,31 @@
 unset imap_check_subscribed
 set folder="imaps://imap.googlemail.com:993"
 set spoolfile="+INBOX"
-set record=""
 set postponed="+[Gmail]/Drafts"
+set record=""
 save-hook . "+[Gmail]/All Mail"
-set trash="+[Gmail]/Trash"
+#set trash="+[Gmail]/Trash"
 #folder-hook ^imap:// 'unset trash'
+
+set imap_keepalive = 900
 
 macro index S s+[Gmail]/Spam\n
 macro pager S s+[Gmail]/Spam\n
+
+bind editor <space> noop
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index gA "<change-folder>=@Action Required<enter>" "Go to @Action Required"
+macro index gD "<change-folder>=@Deferred<enter>" "Go to @Deferred"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+# The next is because doing the above kills g for group reply
+macro index gg "<group-reply>" "Group reply"
+
+# Save macros
+macro index \`a "s+@Action Required<enter>" "Go to @Action Required"
+macro index \`d "s+@Deferred<enter>" "Go to @Deferred"
+
+#marco index gc "<change-folder>imaps://taylor@thecatalis.com@imap.googlemail.com:993/INBOX<enter>" "Got to catalis inbox"
+
+macro index ge "<edit-label>" "Edit label"

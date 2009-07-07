@@ -2,6 +2,7 @@ set header_cache="$HOME/.mutt/headercache.d/"
 set message_cachedir="$HOME/.mutt/messagecache.d/"
 set certificate_file="$HOME/.mutt/certificates"
 
+set markers=no
 set use_from=yes
 set envelope_from=yes
 
@@ -31,6 +32,7 @@ set copy=yes			# always save a copy of outgoing messages
 set alias_file=~/.mutt/aliases	# where I keep my aliases
 source ~/.mutt/aliases
 set editor="vi"		# editor to use when composing messages
+#set editor='vim + -c "set textwidth=72" -c "set wrap" -c "set nocp" -c "?^$"'
 
 # I subscribe to a lot of mailing lists, so this is _very_ useful.  This
 # groups messages on the same subject to make it easier to follow a

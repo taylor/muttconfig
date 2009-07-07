@@ -1,3 +1,5 @@
 # $Id: default,v 1.2 2007/04/03 04:37:16 taylor Exp taylor $
 
+#account-hook . 'unset imap_user; unset imap_pass; unset tunnel'
+
 source ~/.mutt/taylor_codecafe.com

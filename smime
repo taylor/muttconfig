@@ -1,6 +1,7 @@
 source ~/.mutt/smime-`uname -s`
 #source /opt/local/share/doc/mutt/samples/smime.rc
 #set smime_ca_location="/usr/local/share/certs/ca-root.crt
+set smime_ca_location="~/.smime/ca-bundle.crt"
 set crypt_autosign = no
 set crypt_replyencrypt = no
 set crypt_replysign = no
@@ -8,3 +9,6 @@ set crypt_replysignencrypted = no
 
 set smime_certificates="~/.smime/certificates"
 set smime_keys="~/.smime/keys"
+
+set smime_default_key="c8dc6e4c.0"
+set smime_sign_as="c8dc6e4c.0"

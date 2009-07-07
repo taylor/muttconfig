@@ -1,8 +1,14 @@
-set folder="imaps://mail.messagingengine.com:993"
-set spoolfile="+INBOX"
+set folder="imaps://mail.messagingengine.com:993/INBOX"
+set spoolfile="imaps://mail.messagingengine.com:993/INBOX"
 #set imap_home_namespace="INBOX"
 set mask="."
+
 #set folder=imaps://taylor@sent.com@mail.messagingengine.com/INBOX.
 #set folder=imaps://taylor@sent.com@mail.messagingengine.com/INBOX.
 #set spoolfile='imaps://taylor@sent.com@mail.messagingengine.com/INBOX'
 mailboxes imaps://taylor@sent.com@mail.messagingengine.com/INBOX.
+mailboxes +imaps://taylor@sent.com@mail.messagingengine.com/INBOX.Archive
+
+set record = "+Sent Items"
+save-hook . "+Archive.All the rest"
+set postponed=+Drafts
