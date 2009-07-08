@@ -12,3 +12,5 @@ macro pager S "s+Junk<tab><enter>"
 set record = "+Sent Items"
 save-hook . "+Archive.All the rest"
 set postponed=+Drafts
+
+#TEST
