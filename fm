@@ -9,6 +9,9 @@ set mask="."
 mailboxes imaps://taylor@sent.com@mail.messagingengine.com/INBOX.
 mailboxes +imaps://taylor@sent.com@mail.messagingengine.com/INBOX.Archive
 
+macro index S "s+Junk<tab><enter>"
+macro pager S "s+Junk<tab><enter>"
+
 set record = "+Sent Items"
 save-hook . "+Archive.All the rest"
 set postponed=+Drafts
