@@ -12,4 +12,5 @@ source ~/.mutt/private/fm_2nd
 
 source ~/.mutt/private/taylor_codecafe.com
 source ~/.mutt/google
-
+source ~/.mutt/google-ish
+#source ~/.mutt/google-strict
