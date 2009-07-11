@@ -1,0 +1,44 @@
+# Some stuff that is a bit more google-ish... some keystrokes, trash setup, etc
+#
+# Tried to work with google but "improve" IMO.  Example I prefer a
+# for archive rather than e.  I also have some other quick marcos for GTD
+# folders.
+#
+# Also, I think archiving when delete is broken... I prefer archiving when I
+# want other wise delete when I say delete.  If you want google's behaviour you
+# should use google-strict instead of this one.
+#
+# For more google hotkeys see google-hotkeys
+
+macro index S s+[Gmail]/Spam\n
+macro pager S s+[Gmail]/Spam\n
+
+macro index c "<change-folder><tab>y=<tab>" "Change folder"
+macro pager c "<change-folder><tab>y=<tab>" "Change folder"
+
+# Archive with 1 key vs 2 strokes with save + enter is nice
+macro index a "s+[Gmail]/All Mail\n"
+macro pager a "s+[Gmail]/All Mail\n"
+macro index A "<alias>"
+macro pager A "<alias>"
+
+bind editor <space> noop
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index gA "<change-folder>=@Action Required<enter>" "Go to @Action Required"
+macro index gD "<change-folder>=@Deferred<enter>" "Go to @Deferred"
+macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+# The next is because doing the above kills g for group reply
+macro index gg "<group-reply>" "Group reply"
+macro pager gg "<group-reply>" "Group reply"
+
+macro index gl "<copy-message>=" "Add label"
+macro pager gl "<copy-message>=" "Add label"
+
+# Save macros
+macro index \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
+macro pager \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
+macro index \`d "s+@Deferred<enter>$<enter>" "Save to @Deferred"
+macro pager \`d "s+@Deferred<enter>$<enter>" "Save to @Deferred"
+

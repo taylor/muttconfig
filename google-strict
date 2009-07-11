@@ -1,0 +1,8 @@
+# Try to make this as close as possible to what google wants you to do with
+# mail including hotkeys, saving messages, deleting, archiving, etc etc.
+
+# If you want d to just remove the current label then uncomment the following
+#folder-hook ^imap:// 'unset trash'
+#folder-hook ^imaps:// 'unset trash'
+
+source ~/.mutt/google-hotkeys

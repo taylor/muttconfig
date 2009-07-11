@@ -2,20 +2,57 @@
 
 macro index c "mail"
 macro pager c "mail"
+
+# There is no way to easily remove the Inbox label when not in inbox... so
+# these really just do the same thing.
 macro index e "<delete-message>$<enter>" "Archive message"
 macro pager e "<delete-message>$<enter>" "Archive message"
+macro index y "<delete-message>$<enter>" "Remove label"
+macro pager y "<delete-message>$<enter>" "Remove label"
+
+macro index \# s+[Gmail]/Trash\n
+macro pager \# s+[Gmail]/Trash\n
 
 macro index ! s+[Gmail]/Spam\n
 macro pager ! s+[Gmail]/Spam\n
 
+# If you love mutt limit then  comment these out and uncomment the next section
+macro index l "<copy-message>=" "Add label"
+macro pager l "<copy-message>=" "Add label"
+macro index / "<limit>" "Limit (re: google search)"
+#macro pager / "<limit>" "Limit (re: google search)"
+macro index s "<copy-message>+[Gmail]/Starred\n" "Star message(s)"
+macro pager s "<copy-message>+[Gmail]/Starred\n" "Star message(s)"
+macro index ^s "<search>" "Search"
+macro pager ^s "<search>" "Search"
+macro index ^r "<search-reverse>" "Search backwards"
+macro pager ^r "<search-reverse>" "Search backwards"
+
+# Could use these for not so strict
+#macro index * "<copy-message>+[Gmail]/Starred" "Star message(s)"
+#macro pager * "<copy-message>+[Gmail]/Starred" "Star message(s)"
+#macro generic s "<copy-message>=" "Add label"
+#macro index s "<copy-message>=" "Add label"
+#macro pager s "<copy-message>=" "Add label"
+
+macro index a "<reply-all>" "Group Reply"
+macro pager a "<reply-all>" "Group Reply"
+macro index A "<alias>"
+macro pager A "<alias>"
+
 bind editor <space> noop
-macro index gl "<change-folder>" "Change folder"
-macro pager gl "<change-folder>" "Change folder"
+macro index gl "<change-folder><tab>y=<tab>" "Change folder"
+macro pager gl "<change-folder><tab>y=<tab>" "Change folder"
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro pager gi "<change-folder>=INBOX<enter>" "Go to inbox"
 macro index ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
+macro pager ga "<change-folder>=[Gmail]/All Mail<enter>" "Go to all mail"
 macro index gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
+macro pager gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
 #macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
 macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
+macro pager gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 ## The next is because doing the above kills g for group reply
 # google uses a but that is alias
-#macro index gg "<group-reply>" "Group reply"
+macro index gg "<group-reply>" "Group reply"
+macro pager gg "<group-reply>" "Group reply"
