@@ -19,8 +19,11 @@ macro pager c "<change-folder><tab>y=<tab>" "Change folder"
 # Archive with 1 key vs 2 strokes with save + enter is nice
 macro index a "s+[Gmail]/All Mail\n"
 macro pager a "s+[Gmail]/All Mail\n"
-macro index A "<alias>"
-macro pager A "<alias>"
+macro index A "<create-alias>"
+macro pager A "<create-alias>"
+
+macro index * "<copy-message>+[Gmail]/Starred\n" "Star message(s)"
+macro pager * "<copy-message>+[Gmail]/Starred\n" "Star message(s)"
 
 bind editor <space> noop
 macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
@@ -31,10 +34,10 @@ macro index gs "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to Sent Mail"
 macro index gd "<change-folder>=[Gmail]/Drafts<enter>" "Go to drafts"
 # The next is because doing the above kills g for group reply
 macro index gg "<group-reply>" "Group reply"
-macro pager gg "<group-reply>" "Group reply"
+macro pager g "<group-reply>" "Group reply"
 
 macro index gl "<copy-message>=" "Add label"
-macro pager gl "<copy-message>=" "Add label"
+macro pager l "<copy-message>=" "Add label"
 
 # Save macros
 macro index \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
