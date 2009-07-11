@@ -37,8 +37,8 @@ macro pager ^r "<search-reverse>" "Search backwards"
 
 macro index a "<reply-all>" "Group Reply"
 macro pager a "<reply-all>" "Group Reply"
-macro index A "<alias>"
-macro pager A "<alias>"
+macro index A "<create-alias>"
+macro pager A "<create-alias>"
 
 bind editor <space> noop
 macro index gl "<change-folder><tab>y=<tab>" "Change folder"
