@@ -2,8 +2,8 @@
 
 macro index c "mail"
 macro pager c "mail"
-macro index e "s+[Gmail]/All Mail<enter>$<enter>" "Archive message"
-macro pager e "s+[Gmail]/All Mail<enter>$<enter>" "Archive message"
+macro index e "<delete-message>$<enter>" "Archive message"
+macro pager e "<delete-message>$<enter>" "Archive message"
 
 macro index ! s+[Gmail]/Spam\n
 macro pager ! s+[Gmail]/Spam\n

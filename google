@@ -5,7 +5,8 @@ set postponed="+[Gmail]/Drafts"
 set record=""
 save-hook . "+[Gmail]/All Mail"
 #set trash="+[Gmail]/Trash"
-#folder-hook ^imap:// 'unset trash'
+folder-hook ^imap:// 'unset trash'
+folder-hook ^imaps:// 'unset trash'
 
 set imap_keepalive = 900
 
