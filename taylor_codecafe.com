@@ -7,9 +7,6 @@ macro   compose "\e2"   "my_hdr From: Taylor Carpenter <txcardio@etechsolutions.
 set from = "taylor@codecafe.com"
 set realname = "Taylor Carpenter"
 
-source ~/.mutt/private/catalis-mailboxes
-source ~/.mutt/private/fm_2nd
-
 source ~/.mutt/private/taylor_codecafe.com
 source ~/.mutt/google
 source ~/.mutt/google-ish
