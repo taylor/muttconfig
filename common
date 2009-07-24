@@ -38,8 +38,10 @@ set editor="vi"		# editor to use when composing messages
 # groups messages on the same subject to make it easier to follow a
 # discussion.  Mutt will draw a nice tree showing how the discussion flows.
 set sort=threads		# primary sorting method
-set sort_aux=reverse-date-received	# how to sort subthreads
-#set sort_aux=last-date		# date of the last message in thread
+#set sort_aux=reverse-date-received	# how to sort subthreads
+#set sort_aux=reverse-last-date		# date of the last message in thread
+#set sort_aux=last-date-received		# showing threads with youngest message last
+set sort_aux=reverse-last-date-received		# showing threads with youngest message first
 set sort_browser=reverse-date	# how to sort files in the dir browser
 #set spoolfile='~/mailbox'	# where my new mail is located
 
