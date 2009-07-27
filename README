@@ -1,11 +1,13 @@
 muttrc is linked to $HOME/.muttrc
 
 By default when I run mutt it loads muttrc which loads some common settings,
-then local system settings (eg. OS specific), then loads default which setups
-the default account.  That sets stuff like the mailboxes and spooldir for the
-provider.
+then local system settings (eg. OS specific), then loads the default account.
+That sets stuff like the mailboxes, spooldir for the provider, etc.
 
-private/* contains files that are sourced for mail passwords etc.
+provider/ contains all settings specific to a mail provider (spool dir, bindings, etc)
+platform/ has os specific settings
+accounts/ has all account specific settings
+private/ contains files that are included for mail passwords etc.
 
 NOTE:
 
@@ -16,6 +18,6 @@ TODO:
 
 common will be split out into separate files when I have time to refactor.
 
-smime is not finished yet.
+smime is not finished yet but does work for signature verification.
 
 GPG is setup using defaults
