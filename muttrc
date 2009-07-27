@@ -1,3 +1,3 @@
 source ~/.mutt/common
 source ~/.mutt/local
-source ~/.mutt/default
+source ~/.mutt/accounts/default

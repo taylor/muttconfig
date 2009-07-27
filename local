@@ -1,5 +1,6 @@
 # This is os-independent but specific to this computer or layout...
 source ~/.mutt/smime
+#source ~/.mutt/religious_choices
 
 # Now load OS specific stuff
 #source ~/.mutt/$OSNAME
