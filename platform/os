@@ -1,0 +1,2 @@
+source ~/.mutt/platform/`uname -s`
+#source ~/.mutt/platform/`figure out gui or console`

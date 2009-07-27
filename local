@@ -3,5 +3,4 @@ source ~/.mutt/smime
 #source ~/.mutt/religious_choices
 
 # Now load OS specific stuff
-#source ~/.mutt/$OSNAME
-source ~/.mutt/`uname -s`
+source ~/.mutt/platform/os
