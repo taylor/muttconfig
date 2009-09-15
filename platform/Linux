@@ -1,1 +1,9 @@
 source /etc/Muttrc
+set sendmail="/usr/bin/msmtp"
+#set meta_key=yes
+#set print_command="enscript --font=Times-Roman10 --pretty-print"
+#set pgp_gpg="/opt/local/bin/gpg"
+#set query_command="/opt/local/bin/lbdbq '%s'"
+#set query_command="contacts -l -f%e %s"
+#set query_command="lbdbq %s"  # little brother talks to address book
+
