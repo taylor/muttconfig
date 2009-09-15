@@ -2,4 +2,4 @@
 
 #account-hook . 'unset imap_user; unset imap_pass; unset tunnel'
 
-source ~/.mutt/work
+source ~/.mutt/accounts/work
