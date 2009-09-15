@@ -1,6 +1,16 @@
-set header_cache="$HOME/.mutt/headercache.d/"
-set message_cachedir="$HOME/.mutt/messagecache.d/"
-set certificate_file="$HOME/.mutt/certificates"
+set header_cache="$HOME/.cache/mutt/headercache.d/"
+set message_cachedir="$HOME/.cache/mutt/messagecache.d/"
+set certificate_file="$HOME/.cache/mutt/certificates"
+
+set ispell="aspell -e -c"
+
+# set sidebar_visible="no"
+# set sidebar_width="40"
+# bind index \Cp sidebar-prev
+# bind index \Cn sidebar-next
+# bind index \Cb sidebar-open
+# macro index B ':toggle sidebar_visble^M'
+# macro pager B ':toggle sidebar_visble^M'
 
 set markers=no
 set use_from=yes
@@ -9,11 +19,6 @@ set envelope_from=yes
 ### IMAP ###
 #set imap_check_subscribed
 
-# OS X
-#set print_command="enscript --font=Times-Roman10 --pretty-print"
-
-#set query_command="contacts -l -f%e %s"
-#set query_command="lbdbq %s"  # little brother talks to address book
 set text_flowed
 unset metoo			# remove my address when replying
 unset wait_key
@@ -23,8 +28,6 @@ unset wait_key
 #set postponed=+Drafts
 
 set mbox_type=Maildir
-
-set hostname="codecafe.com"	# my DNS domain
 
 set move=no # don't move read mail to mbox
 set copy=yes			# always save a copy of outgoing messages
