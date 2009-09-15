@@ -40,8 +40,10 @@ macro index gl "<copy-message>=" "Add label"
 macro pager l "<copy-message>=" "Add label"
 
 # Save macros
-macro index \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
-macro pager \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
-macro index \`d "s+@Deferred<enter>$<enter>" "Save to @Deferred"
-macro pager \`d "s+@Deferred<enter>$<enter>" "Save to @Deferred"
+#macro index \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
+#macro pager \`a "s+@Action Required<enter>$<enter>" "Save to @Action Required"
+macro index \`a "s+@Action Required<enter>" "Save to @Action Required"
+macro pager \`a "s+@Action Required<enter>" "Save to @Action Required"
+macro index \`d "s+@Deferred<enter>" "Save to @Deferred"
+macro pager \`d "s+@Deferred<enter>" "Save to @Deferred"
 

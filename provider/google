@@ -1,5 +1,7 @@
 unset imap_check_subscribed
 set folder="imaps://imap.googlemail.com:993"
+#mailboxes imaps://imap.googlemail.com:993/INBOX
+#mailboxes +imaps://imap.googlemail.com:993/[Gmal]/All\ Mail"
 set spoolfile="+INBOX"
 set postponed="+[Gmail]/Drafts"
 set record=""
