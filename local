@@ -4,3 +4,5 @@ source ~/.mutt/smime
 
 # Now load OS specific stuff
 source ~/.mutt/platform/os
+
+#set hostname="codecafe.com"	# my DNS domain
