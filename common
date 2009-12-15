@@ -1,9 +1,12 @@
 set header_cache="$HOME/.cache/mutt/headercache.d/"
+#set header_cache="/mnt/linuxhome/$USER/.cache/mutt/headercache.d/"
 set message_cachedir="$HOME/.cache/mutt/messagecache.d/"
+#set message_cachedir="/mnt/linuxhome/$USER/.cache/mutt/messagecache.d/"
 set certificate_file="$HOME/.cache/mutt/certificates"
 
 set ispell="aspell -e -c"
 
+set sidebar_visible=no
 # set sidebar_visible="no"
 # set sidebar_width="40"
 # bind index \Cp sidebar-prev
