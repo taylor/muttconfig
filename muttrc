@@ -1,3 +1,5 @@
 source ~/.mutt/common
 source ~/.mutt/local
 source ~/.mutt/accounts/default
+
+#set sidebar_visible=no
